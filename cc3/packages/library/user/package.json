@@ -1,0 +1,26 @@
+{
+  "name": "user",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "core": "file:../../core",
+    "ui": "*",
+    "vue": "*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "*",
+    "typescript": "*",
+    "vite": "*",
+    "vue-tsc": "*"
+  },
+  "main": "./src/library.ts",
+  "exports": {
+    ".": "./src/library.ts"
+  }
+}
